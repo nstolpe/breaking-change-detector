@@ -1,0 +1,4 @@
+{
+  "name": "limiting-factor",
+  "types": "./limiting-factor.d.ts"
+}

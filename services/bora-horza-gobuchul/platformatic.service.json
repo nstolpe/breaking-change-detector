@@ -1,0 +1,24 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v1.10.0/service",
+  "service": {
+    "openapi": true
+  },
+  "watch": true,
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false
+      },
+      "./routes"
+    ]
+  },
+  "clients": [
+    {
+      "schema": "clients/limiting-factor/limiting-factor.openapi.json",
+      "name": "limitingFactor",
+      "type": "openapi",
+      "serviceId": "limiting-factor"
+    }
+  ]
+}

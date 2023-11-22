@@ -17,6 +17,20 @@
           "prefix": "/movies-service",
           "config": "movies-service-openapi.config.json"
         }
+      },
+      {
+        "id": "limiting-factor",
+        "openapi": {
+          "url": "/documentation/json",
+          "prefix": "/limiting-factor"
+        }
+      },
+      {
+        "id": "bora-horza-gobuchul",
+        "openapi": {
+          "url": "/documentation/json",
+          "prefix": "/bora-horza-gobuchul"
+        }
       }
     ],
     "refreshTimeout": 1000

@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Platformatic",
+    "description": "This is a service built on top of Platformatic",
+    "version": "1.0.0"
+  },
+  "components": {
+    "schemas": {
+      "foo": "bar"
+    }
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Default Response"
+          }
+        }
+      }
+    }
+  }
+}
