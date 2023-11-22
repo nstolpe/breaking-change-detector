@@ -23,7 +23,8 @@ jobs:
       PLT_SERVER_HOSTNAME: 127.0.0.1
       PLT_SERVER_LOGGER_LEVEL: info
       PLT_PEOPLE_SERVICE_DATABASE_URL: ${{ secrets.PLT_PEOPLE_SERVICE_DATABASE_URL }}
-
+      PLT_BOOKS_SERVICE_DATABASE_URL: ${{ secrets.PLT_BOOKS_SERVICE_DATABASE_URL }}
+      PLT_MOVIES_SERVICE_DATABASE_URL: ${{ secrets.PLT_MOVIES_SERVICE_DATABASE_URL }}
     
     steps:
       - name: Checkout application project repository
