@@ -1,5 +1,5 @@
 {
-  "$schema": "https://platformatic.dev/schemas/v1.12.0/db",
+  "$schema": "https://platformatic.dev/schemas/v1.10.0/db",
   "db": {
     "connectionString": "{PLT_MOVIES_SERVICE_DATABASE_URL}",
     "graphql": true,
