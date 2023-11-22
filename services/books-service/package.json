@@ -1,13 +1,15 @@
 {
   "scripts": {
     "start": "platformatic start",
-    "test": "node --test test/**"
+    "test": "node --test test/*/*.test.js",
+    "migrate": "platformatic db migrations apply",
+    "seed": "platformatic db seed seed.js"
   },
   "devDependencies": {
     "fastify": "^4.23.2"
   },
   "dependencies": {
-    "@platformatic/client": "^1.12.0",
+    "@platformatic/db": "^1.12.0",
     "platformatic": "^1.12.0"
   },
   "engines": {

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v1.12.0/composer",
+  "composer": {
+    "services": [
+      {
+        "id": "books-service",
+        "openapi": {
+          "url": "/documentation/json",
+          "prefix": "/books-service",
+          "config": "books-service-openapi.config.json"
+        }
+      },
+      {
+        "id": "movies-service",
+        "openapi": {
+          "url": "/documentation/json",
+          "prefix": "/movies-service",
+          "config": "movies-service-openapi.config.json"
+        }
+      }
+    ],
+    "refreshTimeout": 1000
+  },
+  "watch": true,
+  "clients": [
+    {
+      "schema": "clients/people/people.openapi.json",
+      "name": "people",
+      "type": "openapi",
+      "serviceId": "people-service"
+    }
+  ],
+  "plugins": {
+    "paths": [
+      "./plugin.js"
+    ]
+  }
+}
