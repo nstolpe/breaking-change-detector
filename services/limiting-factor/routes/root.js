@@ -3,6 +3,6 @@
 /** @param {import('fastify').FastifyInstance} fastify */
 module.exports = async function (fastify, opts) {
   fastify.get('/', async (request, reply) => {
-    return { captain: fastify.captain }
+    return { whoami: fastify.captain }
   })
 }
